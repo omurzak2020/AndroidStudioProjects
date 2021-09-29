@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobil_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.browser.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_instagramFragment"
+            app:destination="@id/instagram_Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_facebookFragment"
+            app:destination="@id/facebookFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/instagram_Fragment"
+        android:name="com.example.browser.instagram.InstagramFragment"
+        android:label="fragment_instagram"
+        tools:layout="@layout/fragment_instagram" />
+    <fragment
+        android:id="@+id/facebookFragment"
+        android:name="com.example.browser.facebook.FacebookFragment"
+        android:label="fragment_facebook"
+        tools:layout="@layout/fragment_facebook" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.browser.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+
+</navigation>

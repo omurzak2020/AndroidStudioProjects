@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.landenlabs.flipanimation"
+    android:installLocation="auto"
+    android:versionCode="0101"
+    android:versionName="1.01" >
+
+    <application
+        android:allowBackup="true"
+        android:description="@string/app_desc"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityViewFlipper"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ActivityRotAnimation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ActivityRotAnimComp"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ActivityObjAnimImg"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ActivityObjAnimView"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ActivityObjAnimListRT"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ActivityObjAnimListR"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>
